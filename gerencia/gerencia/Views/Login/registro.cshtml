@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "registro";
+    Layout = "~/Views/Shared/_LayoutInicioLogin.cshtml";
+}
+
+       <h2 class="text-center">REGISTRARSE</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="" class="text-uppercase"><b>CEDULA</b></label>
+                    <input type="text" id="Icedula" class="form-control" placeholder="cedula">
+                </div>
+                <div class="form-group">
+                    <label for="" class="text-uppercase"><b>NOMBRES</b></label>
+                    <input type="text" id="Inombre" class="form-control" placeholder="Nombres">
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="text-uppercase"><b>APELLIDOS</b></label>
+                    <input type="text" id="Iapellido" class="form-control" placeholder="apellido">
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="text-uppercase"><b>CORREO</b></label>
+                    <input type="text" id="Icorreo" class="form-control" placeholder="Correo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="" class="text-uppercase"><b>CONTRASEÑA</b></label>
+                    <input type="password" id="Iclave" class="form-control" placeholder="Password">
+                </div>
+
+                <div >
+                    <button class="btn btn-success float-left">@Html.ActionLink("Volver","Index")</button>
+                    <button type="button" class="btn btn-login float-right" onclick="return Add()">Enviar</button>
+                </div>
+
+            </form>
+
+       

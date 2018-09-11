@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutInicioLogin.cshtml";
+}
+
+
+          
+  <h2 class="text-center">INGRESAR</h2>
+      <form class="login-form">
+          <div class="form-group">
+            <label for="" class="text-uppercase"><b>CORREO</b></label>
+                  <input type="text" id="Iusuario" class="form-control" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="" class="text-uppercase"><b>CONTRASEÑA</b></label>
+                        <input type="password" id="Iclave" class="form-control" placeholder="Password">
+                    </div>
+
+                    <div class="form-check">
+                        <button type="button" class="btn btn-login float-right" onclick="return Login()">Login</button>
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            <small>Recordar</small>
+                        </label><br />
+                <small>No tienes cuenta? click <a>@Html.ActionLink("aqui ","registro")</a>para registrarse</small>
+            </div>
+        </form>
+  <div class="copy-text">Created with <i class="fa fa-heart"></i> by <a href="http://grafreez.com">Grafreez.com</a></div>
+           
+         
+
