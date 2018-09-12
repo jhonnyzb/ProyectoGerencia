@@ -28,17 +28,13 @@ namespace gerencia.ACC_Datos
             }
         }
 
-        public string logueo(usuarios usuario)
+        public usuarios logueo(usuarios usuario)
         {
             using (empresaEntities empresa = new empresaEntities())
             {
                 usuarios u = empresa.usuarios.SingleOrDefault(x => x.email_usuario == usuario.email_usuario && x.clave_usuario == usuario.clave_usuario);
-                string resultado = "no existe";
-                if (u!= null)
-                {
-                    resultado = "admin";
-                }
-                return resultado;
+              
+                return u;
             }
 
         }

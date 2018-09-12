@@ -26,11 +26,13 @@ namespace gerencia.Controllers
         public JsonResult Logueo(usuarios usuario) 
         {
            ACCDATOS acd=new ACCDATOS();
-           string resu = acd.logueo(usuario);
-            if (resu == "admin")
+           usuarios usua = acd.logueo(usuario);
+           string resu = "no existe";
+            if (usua != null)
             {
-                Session["Idusuario"] = usuario.id_usuario;
-                Session["Nusuario"] = usuario.nombre_usuario;
+                Session["Idusuario"] = usua.id_usuario;
+                Session["Nusuario"] = usua.nombre_usuario;
+                resu = "admin";
             }
             return Json(resu,JsonRequestBehavior.AllowGet);
         }
@@ -41,6 +43,13 @@ namespace gerencia.Controllers
             ACCDATOS acd = new ACCDATOS();
             var a = acd.ADD_usuario(usuario);
             return Json(a, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult CerrarSesion()
+        {
+            Session.Clear();
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
         }
 
     }

@@ -4,7 +4,7 @@
     if (res == false) {
         return false;
     }
-
+    $('#blogin').attr("disabled", true);
     var Usuario = {
         email_usuario: $('#Iusuario').val(),
         clave_usuario: $('#Iclave').val()
@@ -24,6 +24,7 @@
                     button: "Aceptar",
                 }).then(function (isConfirm) {
                     clearTextBox();
+                    $('#blogin').attr("disabled", false);
                 })
             } else { window.location.href = "/admin/Index"; }
         },
@@ -39,6 +40,7 @@ function Add() {
     if (res == false) {
         return false;
     }
+    $('#bregistro').attr("disabled", true);
     var empObj = {
         id_usuario: $('#Icedula').val(),
         nombre_usuario: $('#Inombre').val(),
@@ -67,6 +69,7 @@ function Add() {
             } else {
                 swal("ERROR", "Usuario ya existe", "error");
                 clearTextBoxRegistro();
+                $('#bregistro').attr("disabled", false);
             }
         },
         error: function (errormessage) {
