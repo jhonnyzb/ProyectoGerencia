@@ -47,6 +47,9 @@ E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\es\Sys
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\es\System.Web.Webpages.Razor.resources.dll
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\es\System.Web.Helpers.resources.dll
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\es\System.Web.Mvc.resources.dll
-E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.csprojResolveAssemblyReference.cache
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.dll
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.pdb
+E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\Microsoft.Web.Infrastructure.dll
+E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.csprojAssemblyReference.cache
+E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.csproj.CoreCompileInputs.cache
+E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.csproj.CopyComplete
