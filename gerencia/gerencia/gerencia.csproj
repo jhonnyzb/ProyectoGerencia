@@ -21,6 +21,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -104,6 +106,7 @@
     <Content Include="Content\sweetalert\thumbs-up.jpg" />
     <Content Include="Scripts\datatables-demo.js" />
     <Content Include="Scripts\dataTables.bootstrap4.js" />
+    <Content Include="Scripts\empleados.js" />
     <Content Include="Scripts\jquery.dataTables.js" />
     <Content Include="webfonts\fa-brands-400.svg" />
     <Content Include="webfonts\fa-regular-400.svg" />
@@ -242,6 +245,7 @@
     <Content Include="packages.config" />
     <Content Include="Views\Shared\_Layoutadmin.cshtml" />
     <Content Include="Views\admin\Index.cshtml" />
+    <Content Include="Views\admin\View.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

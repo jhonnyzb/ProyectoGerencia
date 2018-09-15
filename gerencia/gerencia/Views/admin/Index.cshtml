@@ -1,83 +1,58 @@
-﻿
+﻿@model IEnumerable<gerencia.Models.empleados>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layoutadmin.cshtml";
 }
-<div class="card mb-3">
-    <div class="card-header">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" onclick="clearTextBox();">Agregar nuevo empleado</button>
-    </div>
-    <div class="card-body">
-        <div class="table-responsive">
-            <table class="table table-hover" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>
-                            ID
-                        </th>
-                        <th>
-                            NOMBRE
-                        </th>
-                        <th>
-                            EDAD
-                        </th>
-                        <th>
-                            ESTADO
-                        </th>
-                        <th>
-                            PAIS
-                        </th>
-                        <th>
-                            ACCION
-                        </th>
-                    </tr>
-                </thead>
-                <tbody class="tbody">
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>
+
+<div class="card mb-3 tbod">
+    
+
 </div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-    <div class="modal-content">
-        <div class="modal-header">
-            @*<button type="button" class="close" data-dissmiss="modal"><span aria-hidden="true">×</span></button>*@
-            <label style="color:red">REGISTRO DE EMPLEADOS</label>
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <h4 class="modal-title" id="myModalLabel"></h4>
-        </div>
-        <div class="modal-body">
-            <form>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<button type="button" class="close" data-dissmiss="modal"><span aria-hidden="true">×</span></button>*@
+                <label style="color:red">REGISTRO DE EMPLEADOS</label>
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <form>
 
-                <div class="form-group">
-                    <label for="EmployeeId">ID</label>
-                    <input type="text" class="form-control" id="EmployeeID" placeholder="Id" />
-                </div>
-                <div class="form-group">
-                    <label for="Name">Nombre</label>
-                    <input type="text" class="form-control" id="Name" placeholder="Nombre" />
-                </div>
-                <div class="form-group">
-                    <label for="Age">Edad</label>
-                    <input type="text" class="form-control" id="Age" placeholder="Edad" />
-                </div>
-                <div class="form-group">
-                    <label for="State">Estado</label>
-                    <input type="text" class="form-control" id="State" placeholder="Estado" />
-                </div>
-                <div class="form-group">
-                    <label for="Country">Pais</label>
-                    <input type="text" class="form-control" id="Country" placeholder="Pais" />
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Agregar</button>
-            <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Actualizar</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <div class="form-group">
+                        <label for="EmployeeId">ID</label>
+                        <input type="text" class="form-control" id="EmployeeID" placeholder="Id" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">Nombre</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Nombre" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Age">Edad</label>
+                        <input type="text" class="form-control" id="Age" placeholder="Edad" />
+                    </div>
+                    <div class="form-group">
+                        <label for="State">Estado</label>
+                        <input type="text" class="form-control" id="State" placeholder="Estado" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Country">Pais</label>
+                        <input type="text" class="form-control" id="Country" placeholder="Pais" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="btnAdd" onclick="return Add();">Agregar</button>
+                <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Actualizar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
         </div>
     </div>
 </div>
-</div>
+
+
+
+
+
+
