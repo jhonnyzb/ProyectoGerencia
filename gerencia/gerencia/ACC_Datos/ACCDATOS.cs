@@ -61,16 +61,17 @@ namespace gerencia.ACC_Datos
 
         public int UpdateE(empleados em)
         {
-
-            empresaEntities bd = new empresaEntities();
-            empleados an = bd.empleados.Find(em.EmpleadoID);
-            an.Nombre = em.Nombre;
-            an.Edad = em.Edad;
-            an.Estado = em.Estado;
-            an.Pais = em.Pais;
-            bd.SaveChanges();
-
-            return 1;
+            using (empresaEntities bd = new empresaEntities())
+            {
+                
+                empleados an = bd.empleados.Find(em.EmpleadoID);
+                an.Nombre = em.Nombre;
+                an.Edad = em.Edad;
+                an.Estado = em.Estado;
+                an.Pais = em.Pais;
+                bd.SaveChanges();
+                return 1;
+            }            
         }
 
 

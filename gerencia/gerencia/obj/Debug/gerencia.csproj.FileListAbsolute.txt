@@ -53,3 +53,6 @@ E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\Micros
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.csprojAssemblyReference.cache
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.csproj.CoreCompileInputs.cache
 E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\obj\Debug\gerencia.csproj.CopyComplete
+E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\Microsoft.ReportViewer.Common.dll
+E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+E:\universidad\prueba\repositorios\ProyectoGerencia\gerencia\gerencia\bin\Microsoft.ReportViewer.WebForms.DLL
